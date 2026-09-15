@@ -1,4 +1,5 @@
 from uuid import UUID
+from ..core.exceptions import AppException, NotFoundException
 
 class BookNotFoundException(NotFoundException):
 
