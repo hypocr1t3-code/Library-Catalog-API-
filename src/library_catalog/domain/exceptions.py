@@ -19,6 +19,7 @@ class InvalidYearException(AppException):
         from datetime import datetime
 
         current_year = datetime.now().year
+        super().__init__(
             message=f"Year {year} is invalid (must be 1000-{current_year})",
             status_code=400,
         )
